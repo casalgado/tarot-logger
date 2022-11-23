@@ -10,7 +10,7 @@ console.log(DateTime.now().toString());
 
 const entries: any = ref({});
 onBeforeMount(() => {
-  allEntries.then((res) => (entries.value = res.reverse()));
+  allEntries.then((res) => (entries.value = res));
 });
 </script>
 

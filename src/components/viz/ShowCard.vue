@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-1/6">
+  <div class="w-36">
     <p class="text-center">
       {{
         DateTime.fromFormat(card.date, "dd/MM/yy").toFormat("dd MMM").toString()
@@ -17,6 +17,7 @@ const props = defineProps({
       alt=""
       :class="`${card.rotate ? 'rotate-180' : ''}`"
     />
+    <p class="text-center text-xs">{{ card.name }}</p>
   </div>
 </template>
 
